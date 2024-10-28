@@ -2,7 +2,7 @@
   "hello": {
     "scope": "typescript,javascript",
     "prefix": "hello",
-    "body": "$BLOCK_COMMENT_START Hello Flake $BLOCK_COMMENT_END"
+    "body": "$BLOCK_COMMENT_START Hello World $BLOCK_COMMENT_END"
   }
 }
 
