@@ -18,15 +18,10 @@
       packageName = "shell-scripts";
     in
     {
-      packages.default = pkgs.writeTextFile {
-        executable = false;
-        name = "hello.sh";
-        text = ''
-          #!${pkgs.bash}/bin/bash
-          echo "Hello, world!
-        '';
-
-      };
+      packages.default =
+        pkgs.writeTextDir
+          "snippets/hello-world.code-snippets"
+          (builtins.readFile ./snippets/hello-world.code-snippets);
     }
   );
 }
