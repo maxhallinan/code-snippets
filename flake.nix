@@ -18,10 +18,10 @@
       packageName = "shell-scripts";
     in
     {
-      packages.default =
-        pkgs.writeTextDir
-          "snippets/hello-world.code-snippets"
-          (builtins.readFile ./snippets/hello-world.code-snippets);
+      packages.default = pkgs.runCommand "code-snippets" { } ''
+        mkdir -p $out
+        cp -r ${./code-snippets}/* $out
+      '';
     }
   );
 }

@@ -1,0 +1,16 @@
+{
+  "eval-spec": {
+    "scope": "haskell",
+    "prefix": "eval-spec",
+    "body": [["-- $> hspec spec"]]
+  },
+  "eval-specweb": {
+    "scope": "haskell",
+    "prefix": "eval-specweb",
+    "body": [
+      ["-- $> :add TestGhci"],
+      ["-- $> import TestGhci"],
+      ["-- $> ghciAppSpec spec"]
+    ]
+  }
+}
