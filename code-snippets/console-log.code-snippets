@@ -1,0 +1,7 @@
+{
+  "log-value": {
+    "scope": "typescript,javascript",
+    "prefix": "log-value",
+    "body": [["console.log('$1', $1)"]]
+  }
+}
